@@ -1,3 +1,25 @@
+h1.title_text {
+    text-align: center;
+    font-size: 35pt;
+}
+
+hr.solid {
+    margin-right: 10%;
+    margin-left: 10%;
+    border-top: solid 2px;
+    color: #339966;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
 .element_colour_1 {
     background-color:  #339966;
 }
@@ -10,14 +32,13 @@
     color:  #6edaa4;
 }
 
-h1.title_text {
-    text-align: center;
-    font-size: 35pt;
+.subtext_box {
+    background-color: rgb(236, 243, 228);
 }
 
-hr.solid {
-    margin-right: 10%;
-    margin-left: 10%;
-    border-top: solid 2px;
-    color: #339966;
+.image_border {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #339966;
+    padding: 10px;
 }
