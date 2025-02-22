@@ -1,0 +1,18 @@
+.element_colour_1 {
+    background-color:  #339966;
+}
+
+.coloured_title_text {
+    color:  #339966;
+}
+
+.title_text {
+    text-align: center;
+}
+
+hr.solid {
+    margin-right: 10%;
+    margin-left: 10%;
+    border-top: solid 2px;
+    color: #339966;
+}
