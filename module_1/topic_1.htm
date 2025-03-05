@@ -39,48 +39,91 @@
   </div>
 </nav>
 
-<div class="pt-4 pb-0 container">
+<div class="container-fluid">
     <div class="row">
-        <h1 class="coloured_title_text text-center" style=" font-weight: bold;">
-            Module 1
-       </h1>
-        <h1 class="coloured_title_text text-center">
-             Topic 1: What is MySQL
+                  <!-- Sidebar -->
+                  <nav class="col-md-3 col-lg-2 d-md-block bg-dark sidebar">
+                    <div class="position-sticky vh-100 overflow-auto">
+                      <div class="list-group list-group-flush nav flex-column nav-fill pt-3">
+                          <a href="topic_1.htm" class="list-group-item  list-group-item-action active" aria-current="true">
+                            Topic 1
+                            <p class="mb-1">
+                              What is MySQL?
+                            </p>
+                          </a>
+                          <a href="topic_2.htm" class="list-group-item list-group-item-action list-group-item-dark">                    Topic 2
+                            <p class="mb-1">
+                              What is SQL? What are relational databases?
+                            </p>
+                          </a>
+                          <a href="topic_3.htm" class="list-group-item list-group-item-action list-group-item-dark">                    Topic 3
+                            <p class="mb-1">
+                              How does MySQL work?
+                            </p>
+                          </a>
+                          <div class="list-group-item list-group-item-action list-group-item-dark dropdown">
+                            <a href="#" class="dropdown-toggle text-muted text-wrap" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">                    Topic 4
+                              <p>
+                                Installing MySQL on macOS
+                              </p>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <li><a class="dropdown-item" href="topic_4_0.htm">Page 1</a></li>
+                              <li><a class="dropdown-item" href="topic_4_1.htm">Page 2</a></li>
+                              <li><a class="dropdown-item" href="topic_4_2.htm">Page 3</a></li>
+                              <li><a class="dropdown-item" href="topic_4_3.htm">Page 4</a></li>
+                              <li><a class="dropdown-item" href="topic_4_4.htm">Page 5</a></li>
+                              <li><a class="dropdown-item" href="topic_4_5.htm">Page 6</a></li>
+                            </ul>
+                          </div>
+                          <a href="topic_5.htm" class="list-group-item list-group-item-action list-group-item-dark">                    Topic 5
+                            <p class="mb-1">
+                              Using MySQL
+                            </p>
+                          </a>
+                      </div>
+                    </div>
+                  </nav>
+      <div class="pt-4 pb-0 ps-5 pe-5 col-md-9 ms-sm-auto col-lg-10 px-md-4 content-wrapper">
+          <h1 class="coloured_title_text" style=" font-weight: bold;">
+              Module 1
         </h1>
-        <p class="pt-5 pb-2 text-wrap">
-        MySQL is a completely free and open-source implementation of the SQL querying language.</p>
+          <h1 class="coloured_title_text">
+              Topic 1: What is MySQL
+          </h1>
+          <p class="pt-5 pb-2 text-wrap">
+          MySQL is a completely free and open-source implementation of the SQL querying language.</p>
 
-        <p class="pt-1 pb-1 text-wrap">It allows you to create, modify, and manipulate data in a database.</p>
+          <p class="pt-1 pb-1 text-wrap">It allows you to create, modify, and manipulate data in a database.</p>
 
-        <p class="pt-1 pb-1 text-wrap">It is classed as a "relational database management software", which means it used for querying data from relational tables (no worries if you don't know what this is, more on this in a bit).</p>
+          <p class="pt-1 pb-1 text-wrap">It is classed as a "relational database management software", which means it used for querying data from relational tables (no worries if you don't know what this is, more on this in a bit).</p>
 
-        <p class="pt-1 pb-1 text-wrap">MySQL is used by millions of websites on the Internet to store and retrieve data for critical website functions.</p>
-            
-        <p class="pt-1 pb-1 text-wrap">Many companies around the world trust MySQL for storing confidential and important user and product data because it is secure, reliable, and quick.
-        </p>
-       
+          <p class="pt-1 pb-1 text-wrap">MySQL is used by millions of websites on the Internet to store and retrieve data for critical website functions.</p>
+              
+          <p class="pt-1 pb-1 text-wrap">Many companies around the world trust MySQL for storing confidential and important user and product data because it is secure, reliable, and quick.
+          </p>
+      </div>
+      <div class="container d-flex align-items-end justify-content-end mt-5 mb-5">
+        <div class="row">
+            <div class="col-6">
+                <a href="module1_landing.htm" class="btn btn-dark">
+                    <h2 class="pt-2 pb-2 ps-3 pe-3 coloured_title_text_light">Back</h2>
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="topic_2.htm" class="btn btn-dark">
+                    <h2 class="pt-2 pb-2 ps-3 pe-3 coloured_title_text_light">Next</h2>
+                </a>
+            </div>
+      </div>
     </div>
-</div>
-
-<div class="container d-flex align-items-end justify-content-end mt-5">
-    <div class="row">
-        <div class="col-6">
-            <a href="module1_landing.htm" class="btn btn-dark">
-                <h2 class="pt-2 pb-2 ps-3 pe-3 coloured_title_text_light">Back</h2>
-            </a>
-        </div>
-        <div class="col-6">
-            <a href="topic_2.htm" class="btn btn-dark">
-                <h2 class="pt-2 pb-2 ps-3 pe-3 coloured_title_text_light">Next</h2>
-            </a>
-        </div>
-  </div>
+    </div>
 </div>
 
 </body>
 
 <footer>
-    <div class="mt-5 p-4 bg-dark text-white text-center">
+    <div class=" p-4 bg-dark text-white text-center">
         <p>Created by Nate Shearer for INFO 3611.</p>
         <a href="https://github.com/shearernas/INFO_3611_Interactive_Design_Project">GitHub Repository for this project.</a>
 </footer>

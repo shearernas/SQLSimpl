@@ -32,6 +32,10 @@ footer {
     color:  #6edaa4;
 }
 
+.main_content_box {
+    background-color: rgba(245, 245, 245, 0.806);
+}
+
 .subtext_box {
     background-color: rgb(236, 243, 228);
 }
@@ -45,4 +49,16 @@ footer {
     border-width: 5px;
     border-color: #339966;
     padding: 10px;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.content-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
