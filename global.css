@@ -34,6 +34,11 @@ nav {
     font-size: 13pt;
 }
 
+code {
+    color: #339966;
+    font-size: 16pt;
+}
+
 .element_colour_1 {
     background-color:  #339966;
 }
