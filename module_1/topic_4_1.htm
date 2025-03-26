@@ -21,6 +21,7 @@
   <h5>Making MySQL simple for everyone!</h5> 
 </div>
 
+<!--Top navbar; don't touch this-->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <div class="container-fluid d-flex align-items-center justify-content-center">
     <ul class="navbar-nav">
@@ -39,12 +40,66 @@
   </div>
 </nav>
 
-<div class="pt-4 pb-0 container">
+<!--Main body container for sidebar, content, and buttons-->
+<div class="container-fluid">
     <div class="row">
-        <h1 class="coloured_title_text text-center" style=" font-weight: bold;">
+      <!--Sidebar; Copy and paste everything under this <nav> tag below-->
+        <nav class="col-md-3 col-lg-2 d-md-block bg-dark">
+          <div class="position-sticky list-group list-group-flush nav flex-column nav-fill pt-3">
+              <a href="topic_1.htm" class="list-group-item  list-group-item-action list-group-item-dark">
+                Topic 1
+                <p class="mb-1">
+                  What is MySQL?
+                </p>
+              </a>
+              <a href="topic_2.htm" class="list-group-item list-group-item-action list-group-item-dark">                    Topic 2
+                <p class="mb-1">
+                  What is SQL? What are relational databases?
+                </p>
+              </a>
+              <a href="topic_3.htm" class="list-group-item list-group-item-action list-group-item-dark">                    Topic 3
+                <p class="mb-1">
+                  How does MySQL work?
+                </p>
+              </a>
+              <div class="list-group-item list-group-item-action active dropdown" aria-current="true">
+                <a href="#" class="dropdown-toggle text-wrap text-light link-underline link-underline-opacity-0" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">                    Topic 4
+                  <p class="mb-1">
+                    Installing MySQL on macOS
+                  </p>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="topic_4_0.htm">Page 1</a></li>
+                  <li><a class="dropdown-item" href="topic_4_1.htm">Page 2</a></li>
+                  <li><a class="dropdown-item" href="topic_4_2.htm">Page 3</a></li>
+                  <li><a class="dropdown-item" href="topic_4_3.htm">Page 4</a></li>
+                  <li><a class="dropdown-item" href="topic_4_4.htm">Page 5</a></li>
+                  <li><a class="dropdown-item" href="topic_4_5.htm">Page 6</a></li>
+                </ul>
+              </div>
+              <div class="list-group-item list-group-item-action list-group-item-dark dropdown">
+                <a href="#" class="dropdown-toggle text-wrap link-underline link-underline-opacity-0" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">                    Topic 5
+                  <p class="mb-1">
+                    Logging into MySQL
+                  </p>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="topic_5_0.htm">Page 1</a></li>
+                  <li><a class="dropdown-item" href="topic_5_1.htm">Page 2</a></li>
+                  <li><a class="dropdown-item" href="topic_5_2.htm">Page 3</a></li>
+                  <li><a class="dropdown-item" href="topic_5_3.htm">Page 4</a></li>
+                </ul>
+              </div>
+          </div>
+        </nav>
+
+      <!--Content container-->
+      <div class="pt-4 pb-0 col-md-9 ms-sm-auto col-lg-10 px-md-4"> 
+        <!--Copy and paste main content without <div> tag below-->
+          <h1 class="coloured_title_text" style=" font-weight: bold;">
             Module 1
        </h1>
-        <h1 class="coloured_title_text text-center">
+        <h1 class="coloured_title_text">
             Topic 4: Installing MySQL on macOS
         </h1>
         <p class="pt-5 pb-1 text-wrap">Follow this link <a href="https://dev.mysql.com/downloads/mysql/" target="_blank">here</a> to bring up the official download page for MySQL from Oracle (the official developers of MySQL and a trusted software company).</p>
@@ -54,13 +109,13 @@
         <div>
             <ul>
                 <li class="p-1">
-                    "Select Version"
+                    <p>"Select Version"</p>
                 </li>
                 <li class="p-1">
-                    "Select Operating System"
+                    <p>"Select Operating System"</p>
                 </li>
                 <li class="p-1">
-                    "Select OS Version"
+                    <p>"Select OS Version"</p>
                 </li>
             </ul>
         </div>
@@ -79,7 +134,7 @@
             <img src="images/5_2.png" class="img-fluid image_border" style="width: 50%; height: auto;" alt="Screenshot of MySQL download page">
         </div>
 
-        <p class="pt-4 pb-1 text-wrap">Under the "Select OS Version" dropdown menu, select either <strong>"macOS 15 (x86, 64-bit)"</strong>if you are installing MySQL on a Mac with an <strong>Intel processor</strong>, or <strong>"macOS 15 (ARM, 64-bit)"</strong> if you are installing MySQL on a Mac with an <strong>Apple Silicon processor</strong>.</p>
+        <p class="pt-4 pb-1 text-wrap">Under the "Select OS Version" dropdown menu, select either <strong>"macOS 15 (x86, 64-bit)"</strong>, if you are installing MySQL on a Mac with an <strong>Intel processor</strong>, or <strong>"macOS 15 (ARM, 64-bit)"</strong>, if you are installing MySQL on a Mac with an <strong>Apple Silicon processor</strong>.</p>
 
         <div class="container d-flex align-items-center justify-content-center p-4">
             <img src="images/5_3.png" class="img-fluid image_border" style="width: 50%; height: auto;" alt="Screenshot of MySQL download page">
@@ -87,19 +142,19 @@
 
         <div class="container subtext_box d-flex align-items-center justify-content-center p-4">
             <div class="row">
-                <p class="text-wrap text-center">
+                <p class="text-wrap">
                     If you are unsure of what processor is in your Mac computer, at the menu bar to the top left of your screen, click on the Apple logo, then from the dropdown menu that appears, click on "About This Mac".
                 </p>
                 <div class="container d-flex align-items-center justify-content-center p-4">
                     <img src="images/5_4.png" class="img-fluid image_border" style="width: 30%; height: auto;" alt="Screenshot of macOS Apple menu at the top left hand side of the screen">
                 </div>
-                <p class="text-wrap text-center p-3">
-                    From the following window that appears, you should be able to determine what processor is in your Mac.
+                <p class="text-wrap p-3">
+                    <strong>From the following window that appears, you should be able to determine what processor is in your Mac.</strong>
                 </p>
-                <div class="container sub-subtext_box">
+                <div class="container sub-subtext_box py-4">
                     <div class="row">
-                        <div class="col-6 pt-3 pb-3 justify-content-center">
-                            <ul>
+                        <div class="col-6 pt-3 pb-3 px-4 justify-content-center">
+                            <ul class="pb-3">
                                 <li class="text-align-start">
                                     <p>
                                         If the window shows something similar to (this), with <strong>"Intel Core"</strong> after <strong>"Processor"</strong> then your Mac has an Intel processor and you should select the <strong>"macOS 15 (x86, 64-bit)"</strong> option.
@@ -110,7 +165,7 @@
                                 <img src="images/5_5.png" class="img-fluid image_border" style="width: 50%; height: auto;" alt="Screenshot of the 'About this Mac' window, showing that this Macbook has an Intel-based processor.">
                             </div>
                         </div>
-                        <div class="col-6 pt-3 pb-3 justify-content-center">
+                        <div class="col-6 pt-3 pb-3 px-4 justify-content-center">
                             <ul>
                                 <li class="text-align-start">
                                     <p>
@@ -126,28 +181,29 @@
                 </div>
             </div>
         </div>
+        <!--Container for buttons; don't touch this-->
+        <div class="container d-flex align-items-end justify-content-end mt-5 mb-5">
+          <div class="row">
+              <div class="col-6">
+                  <a href="topic_4_0.htm" class="btn btn-dark">
+                      <h2 class="pt-2 pb-2 ps-3 pe-3 coloured_title_text_light">Back</h2>
+                  </a>
+              </div>
+              <div class="col-6">
+                  <a href="topic_4_2.htm" class="btn btn-dark">
+                      <h2 class="pt-2 pb-2 ps-3 pe-3 coloured_title_text_light">Next</h2>
+                  </a>
+              </div>
+            </div>
+          </div>
+      </div>
     </div>
-</div>
-
-<div class="container d-flex align-items-end justify-content-end mt-5">
-    <div class="row">
-        <div class="col-6">
-            <a href="topic_4_0.htm" class="btn btn-dark">
-                <h2 class="pt-2 pb-2 ps-3 pe-3 coloured_title_text_light">Back</h2>
-            </a>
-        </div>
-        <div class="col-6">
-            <a href="topic_4_2.htm" class="btn btn-dark">
-                <h2 class="pt-2 pb-2 ps-3 pe-3 coloured_title_text_light">Next</h2>
-            </a>
-        </div>
   </div>
-</div>
 
 </body>
 
 <footer>
-    <div class="mt-5 p-4 bg-dark text-white text-center">
+    <div class="p-4 bg-dark text-white text-center">
         <p>Created by Nate Shearer for INFO 3611.</p>
         <a href="https://github.com/shearernas/INFO_3611_Interactive_Design_Project">GitHub Repository for this project.</a>
 </footer>

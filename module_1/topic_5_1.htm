@@ -44,7 +44,7 @@
 <div class="container-fluid">
     <div class="row">
       <!--Sidebar; Copy and paste everything under this <nav> tag below-->
-            <nav class="col-md-3 col-lg-2 d-md-block bg-dark">
+            <nav class="col-md-3 col-lg-2 d-md-block bg-dark sidebar">
               <div class="position-sticky list-group list-group-flush nav flex-column nav-fill pt-3">
                   <a href="topic_1.htm" class="list-group-item  list-group-item-action list-group-item-dark">
                     Topic 1
@@ -62,13 +62,13 @@
                       How does MySQL work?
                     </p>
                   </a>
-                  <div class="list-group-item list-group-item-action active dropdown" aria-current="true">
-                    <a href="#" class="dropdown-toggle text-wrap text-light link-underline link-underline-opacity-0" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">                    Topic 4
+                  <div class="list-group-item list-group-item-action list-group-item-dark dropdown" style="z-index:1000; position: relative;">
+                    <a href="#" class="dropdown-toggle text-wrap link-underline link-underline-opacity-0" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">                    Topic 4
                       <p class="mb-1">
                         Installing MySQL on macOS
                       </p>
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <ul class="dropdown-menu" style="z-index:1030; position: relative;"aria-labelledby="dropdownMenuLink">
                       <li><a class="dropdown-item" href="topic_4_0.htm">Page 1</a></li>
                       <li><a class="dropdown-item" href="topic_4_1.htm">Page 2</a></li>
                       <li><a class="dropdown-item" href="topic_4_2.htm">Page 3</a></li>
@@ -77,11 +77,20 @@
                       <li><a class="dropdown-item" href="topic_4_5.htm">Page 6</a></li>
                     </ul>
                   </div>
-                  <a href="topic_5.htm" class="list-group-item list-group-item-action list-group-item-dark">                    Topic 5
-                    <p class="mb-1">
-                      Using MySQL
-                    </p>
-                  </a>
+
+                  <div class="list-group-item list-group-item-action active dropdown" aria-current="true">
+                    <a href="#" class="dropdown-toggle text-wrap text-light link-underline link-underline-opacity-0" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">                    Topic 5
+                      <p class="mb-1">
+                        Logging into MySQL
+                      </p>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="topic_5_0.htm">Page 1</a></li>
+                      <li><a class="dropdown-item" href="topic_5_1.htm">Page 2</a></li>
+                      <li><a class="dropdown-item" href="topic_5_2.htm">Page 3</a></li>
+                      <li><a class="dropdown-item" href="topic_5_3.htm">Page 4</a></li>
+                    </ul>
+                  </div>
               </div>
             </nav>
 
@@ -92,30 +101,23 @@
             Module 1
        </h1>
         <h1 class="coloured_title_text">
-            Topic 4: Installing MySQL on macOS
+            Topic 5: Logging into MySQL
         </h1>
         
-        <p class="pt-4 pb-1 text-wrap">Once the installer has finished unpacking MySQL, this screen will appear right after. It will ask you to create a password that you will use to log into MySQL later on. Choose a password and type it into the box. <strong> Make sure to remember this password well or write it down somewhere; 
-        it isn't an easy task to reset it if you forget!</strong></p>
-        <div class="container d-flex align-items-center justify-content-center p-4">
-            <img src="images/5_10.png" class="img-fluid image_border" style="width: 50%; height: auto;" alt="Screenshot of the MySQL installer program 'Introduction' screen">
-        </div>
-        <p class="pt-4 pb-1 text-wrap">Click "Finish" once you have typed in a password.
-          A final summary screen should then appear if the program was able to successfully install MySQL.</p>
-        <div class="container d-flex align-items-center justify-content-center p-4">
-            <img src="images/5_11.png" class="img-fluid image_border" style="width: 50%; height: auto;" alt="Screenshot of the MySQL installer program 'Introduction' screen">
-        </div>
-        <p class="pt-4 pb-1 text-wrap">Congratulations, <strong>you have just installed MySQL on your computer!</strong></p>
+        <p class="pt-4 pb-1 text-wrap">This is your window into the backend of your computer's operating system.</p>
+        <p class="pt-1 pb-1 text-wrap">Your computer's operating system is structured like a tree's root system, where folders exist in other folders and "branch off" into files and other folders.</p>
+        <p class="pt-1 pb-1 text-wrap">The text before the `%` symbol is the current folder that you are located at, where you can access files or run programs from.</p> 
+        <p class="pt-1 pb-1 text-wrap">For now, however, we just need to type in one command to log into MySQL.</p>
         <!--Container for buttons; don't touch this-->
         <div class="container d-flex align-items-end justify-content-end mt-5 mb-5">
           <div class="row">
               <div class="col-6">
-                  <a href="topic_4_4.htm" class="btn btn-dark">
+                  <a href="topic_4_5.htm" class="btn btn-dark">
                       <h2 class="pt-2 pb-2 ps-3 pe-3 coloured_title_text_light">Back</h2>
                   </a>
               </div>
               <div class="col-6">
-                  <a href="topic_5_0.htm" class="btn btn-dark">
+                  <a href="topic_5_1.htm" class="btn btn-dark">
                       <h2 class="pt-2 pb-2 ps-3 pe-3 coloured_title_text_light">Next</h2>
                   </a>
               </div>
@@ -128,8 +130,8 @@
 </body>
 
 <footer>
-    <div class="p-4 bg-dark text-white text-center">
-        <p>Created by Nate Shearer for INFO 3611.</p>
-        <a href="https://github.com/shearernas/INFO_3611_Interactive_Design_Project">GitHub Repository for this project.</a>
+  <div class="p-4 bg-dark text-white text-center">
+      <p>Created by Nate Shearer for INFO 3611.</p>
+      <a href="https://github.com/shearernas/INFO_3611_Interactive_Design_Project">GitHub Repository for this project.</a>
 </footer>
 </html>
