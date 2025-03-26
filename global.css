@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    font-family: Nunito Sans, Helvetica, Arial, sans-serif;
+}
+
 h1.title_text {
     text-align: center;
     font-size: 35pt;
@@ -22,6 +28,10 @@ p {
 
 footer {
     margin-top: auto;
+}
+
+nav {
+    font-size: 13pt;
 }
 
 .element_colour_1 {
@@ -65,8 +75,4 @@ footer {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-.sidebar_text {
-    font-size: 12pt;
 }

@@ -21,6 +21,7 @@
   <h5>Making MySQL simple for everyone!</h5> 
 </div>
 
+<!--Top navbar; don't touch this-->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <div class="container-fluid d-flex align-items-center justify-content-center">
     <ul class="navbar-nav">
@@ -39,53 +40,55 @@
   </div>
 </nav>
 
+<!--Main body container for sidebar, content, and buttons-->
 <div class="container-fluid">
     <div class="row">
-            <!-- Sidebar -->
-            <nav class="col-md-3 col-lg-2 d-md-block bg-dark sidebar">
-              <div class="position-sticky vh-100 overflow-auto">
-                <div class="list-group list-group-flush nav flex-column nav-fill pt-3">
-                    <a href="topic_1.htm" class="list-group-item list-group-item-action list-group-item-dark">
-                      Topic 1
+      <!--Sidebar; Copy and paste everything under this <nav> tag below-->
+            <nav class="col-md-3 col-lg-2 d-md-block bg-dark">
+              <div class="position-sticky list-group list-group-flush nav flex-column nav-fill pt-3">
+                  <a href="topic_1.htm" class="list-group-item  list-group-item-action list-group-item-dark">
+                    Topic 1
+                    <p class="mb-1">
+                      What is MySQL?
+                    </p>
+                  </a>
+                  <a href="topic_2.htm" class="list-group-item list-group-item-action list-group-item-dark">                    Topic 2
+                    <p class="mb-1">
+                      What is SQL? What are relational databases?
+                    </p>
+                  </a>
+                  <a href="topic_3.htm" class="list-group-item list-group-item-action list-group-item-dark">                    Topic 3
+                    <p class="mb-1">
+                      How does MySQL work?
+                    </p>
+                  </a>
+                  <div class="list-group-item list-group-item-action active dropdown" aria-current="true">
+                    <a href="#" class="dropdown-toggle text-wrap text-light link-underline link-underline-opacity-0" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">                    Topic 4
                       <p class="mb-1">
-                        What is MySQL?
+                        Installing MySQL on macOS
                       </p>
                     </a>
-                    <a href="topic_2.htm" class="list-group-item list-group-item-action list-group-item-dark">                    Topic 2
-                      <p class="mb-1">
-                        What is SQL? What are relational databases?
-                      </p>
-                    </a>
-                    <a href="topic_3.htm" class="list-group-item list-group-item-action list-group-item-dark">                    Topic 3
-                      <p class="mb-1">
-                        How does MySQL work?
-                      </p>
-                    </a>
-                    <div class="list-group-item list-group-item-action dropdown list-group-item-action active" aria-current="true ">
-                      <a href="#" class="dropdown-toggle text-muted text-wrap" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">                    Topic 4
-                        <p>
-                          Installing MySQL on macOS
-                        </p>
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="topic_4_0.htm">Page 1</a></li>
-                        <li><a class="dropdown-item" href="topic_4_1.htm">Page 2</a></li>
-                        <li><a class="dropdown-item" href="topic_4_2.htm">Page 3</a></li>
-                        <li><a class="dropdown-item" href="topic_4_3.htm">Page 4</a></li>
-                        <li><a class="dropdown-item" href="topic_4_4.htm">Page 5</a></li>
-                        <li><a class="dropdown-item" href="topic_4_5.htm">Page 6</a></li>
-                      </ul>
-                    </div>
-                    <a href="topic_5.htm" class="list-group-item list-group-item-action list-group-item-dark">                    Topic 5
-                      <p class="mb-1">
-                        Using MySQL
-                      </p>
-                    </a>
-                </div>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="topic_4_0.htm">Page 1</a></li>
+                      <li><a class="dropdown-item" href="topic_4_1.htm">Page 2</a></li>
+                      <li><a class="dropdown-item" href="topic_4_2.htm">Page 3</a></li>
+                      <li><a class="dropdown-item" href="topic_4_3.htm">Page 4</a></li>
+                      <li><a class="dropdown-item" href="topic_4_4.htm">Page 5</a></li>
+                      <li><a class="dropdown-item" href="topic_4_5.htm">Page 6</a></li>
+                    </ul>
+                  </div>
+                  <a href="topic_5.htm" class="list-group-item list-group-item-action list-group-item-dark">                    Topic 5
+                    <p class="mb-1">
+                      Using MySQL
+                    </p>
+                  </a>
               </div>
             </nav>
-    <div class="justify-content-center pt-4 pb-0 ps-5 pe-5 col-md-9 ms-sm-auto col-lg-10 px-md-4 content-wrapper"> 
-        <h1 class="coloured_title_text" style=" font-weight: bold;">
+
+      <!--Content container-->
+      <div class="pt-4 pb-0 col-md-9 ms-sm-auto col-lg-10 px-md-4"> 
+        <!--Copy and paste main content without <div> tag below-->
+          <h1 class="coloured_title_text" style=" font-weight: bold;">
             Module 1
        </h1>
         <h1 class="coloured_title_text">
@@ -97,14 +100,17 @@
             <img src="images/5_8.png" class="img-fluid image_border" style="width: 50%; height: auto;" alt="Screenshot of the MySQL installer program 'Introduction' screen">
         </div>
             <div class="sub-subtext_box">
-                <p class="ps-4 pe-5 pt-4 pb-1 text-wrap">If a new window appears that states "This package will run a program to determine if the software can be installed.", click <strong>"Allow"</strong>. <br> This is just a check that macOS does to make sure you aren't installing any malicious software but this installer is directly from the Oracle website, so we can trust it.
+                <p class="ps-4 pe-5 pt-4 text-wrap">If a new window appears that states "This package will run a program to determine if the software can be installed.", click <strong>"Allow"</strong>.
+                </p>
+                <p class="ps-4 pe-5 pb-1 text-wrap">
+                  This is just a check that macOS does to make sure you aren't installing any malicious software but this installer is directly from the Oracle website, so we can trust it!
                 </p>
                 <div class="container d-flex align-items-center justify-content-center p-4">
                     <img src="images/5_9.png" class="img-fluid image_border" style="width: 50%; height: auto;" alt="Screenshot of MySQL download page">
                 </div>
-        </div>
-        <p class="pt-4 pe-5 pb-1 text-wrap">When asked to "Choose Installation Location", ignore this option and click "Continue". Let the program install MySQL to your computer.</p>
-
+              </div>
+        <p class="pt-4 pe-5 pb-1 text-wrap">When asked to "Choose Installation Location", ignore this option and click <strong>"Continue"</strong>. Let the program install MySQL to your computer.</p>
+        <!--Container for buttons; don't touch this-->
         <div class="container d-flex align-items-end justify-content-end mt-5 mb-5">
           <div class="row">
               <div class="col-6">
@@ -117,12 +123,11 @@
                       <h2 class="pt-2 pb-2 ps-3 pe-3 coloured_title_text_light">Next</h2>
                   </a>
               </div>
-        </div>
-      </div>
+            </div>
+          </div>
       </div>
     </div>
-</div>
-
+  </div>
 
 </body>
 
