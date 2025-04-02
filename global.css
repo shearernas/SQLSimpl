@@ -4,9 +4,14 @@
     font-family: Nunito Sans, Helvetica, Arial, sans-serif;
 }
 
+h5 {
+    font-size: 20pt;
+}
+
 h1.title_text {
     text-align: center;
-    font-size: 35pt;
+    font-size: 50pt;
+    font-weight: bold;
 }
 
 hr.solid {
@@ -31,12 +36,32 @@ footer {
 }
 
 nav {
-    font-size: 13pt;
+    font-size: 14pt;
+}
+
+button {
+    user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    cursor: text;
 }
 
 code {
-    color: #339966;
-    font-size: 16pt;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15pt !important;
+}
+
+code.tooltip_text {
+    font-size: 11pt !important;
+}
+
+code.inline {
+    font-size: 14pt !important;
+}
+
+small {
+    font-size: 11pt !important;
 }
 
 .element_colour_1 {
@@ -80,4 +105,30 @@ code {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+.floating {
+    max-width: calc(100vw - 10px);
+  }
+
+  .button_container {
+    height: 200px;
+  }
+
+  .bottom_nav_button {
+    height: 100%;
+  }
+
+#code_tooltip {
+    display: none;
+    width: max-content;
+    max-width: 630px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: #222;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
 }
